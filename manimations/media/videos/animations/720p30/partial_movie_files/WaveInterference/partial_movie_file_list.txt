@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/WaveInterference/2016333726_2197179877_223132457.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/WaveInterference/543634251_1860052203_3781086554.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/WaveInterference/543634251_3201849554_2251382037.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/WaveInterference/543634251_2633538498_4044854006.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/WaveInterference/543634251_1839128356_3650837182.mp4'

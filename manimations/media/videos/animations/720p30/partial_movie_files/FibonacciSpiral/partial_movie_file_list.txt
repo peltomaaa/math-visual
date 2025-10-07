@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/2016333726_1566405957_223132457.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_3373731038_3343761631.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_1928529566_529120999.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_2071013921_865781885.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_3988887301_2251934567.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_697051003_4197085337.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_3201849554_2277250352.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_1350901108_1101682277.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FibonacciSpiral/543634251_1839128356_2389624527.mp4'

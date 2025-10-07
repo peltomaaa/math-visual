@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FourierCircles/2016333726_4210211788_223132457.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FourierCircles/543634251_180983252_988137197.mp4'
+file 'file:/Users/samuel/Desktop/math-visual/manimations/media/videos/animations/720p30/partial_movie_files/FourierCircles/543634251_3201849554_3842928063.mp4'
