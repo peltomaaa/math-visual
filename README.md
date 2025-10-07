@@ -6,6 +6,8 @@ A beautiful showcase of mathematical concepts through animated visualizations, p
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-7-646cff)
 
+> **Note**: This is a monorepo containing both the Python animation generator (`manimations/`) and the React frontend (`frontend/`) in a single repository.
+
 ## ✨ Features
 
 - **6 Unique Mathematical Animations** - From fractals to fluid dynamics
