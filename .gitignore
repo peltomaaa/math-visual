@@ -25,8 +25,8 @@ venv/
 ENV/
 env/
 
-# Manim
-media/videos/*/partial_movie_files/
+# Manim - Ignore all generated media files (can be regenerated from Python)
+manimations/media/
 *.log
 *.aux
 *.out

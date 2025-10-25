@@ -1,168 +1,266 @@
 # Mathematical Animations
 
-A beautiful showcase of mathematical concepts through animated visualizations, powered by [Manim](https://www.manim.community/) and React.
+Interactive visualizations of mathematics and AI concepts, built with **Manim** and **React**.
 
-![Mathematical Animations](https://img.shields.io/badge/Manim-Community-blue)
-![React](https://img.shields.io/badge/React-18-61dafb)
-![Vite](https://img.shields.io/badge/Vite-7-646cff)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.13-blue.svg)
+![React](https://img.shields.io/badge/react-19.2.0-61dafb.svg)
 
-> **Note**: This is a monorepo containing both the Python animation generator (`manimations/`) and the React frontend (`frontend/`) in a single repository.
+## 🎯 Overview
 
-## ✨ Features
+This project uses a **dual-pipeline architecture**:
+- **Generation Pipeline** (`manimations/`) - Python scripts using [Manim Community](https://www.manim.community/) to programmatically generate mathematical animations
+- **Showcase Webapp** (`webapp/`) - Interactive React gallery for browsing and learning from the animations
 
-- **6 Unique Mathematical Animations** - From fractals to fluid dynamics
-- **Interactive Playback** - Hover over cards to play animations
-- **Sleek Dark UI** - Modern, minimalist design with gradient accents
-- **Fully Responsive** - Works seamlessly on desktop and mobile
-- **Fast Performance** - Built with Vite for lightning-fast development
+Together, they create an educational platform featuring **17 high-quality animations** covering topics from AI/ML to fractals, chaos theory, and calculus.
 
-## 🎨 Animations Showcase
+### ✨ Features
 
-| Animation | Category | Description |
-|-----------|----------|-------------|
-| **Fractal Tree** | Fractals | Recursive branching structure with natural patterns |
-| **Fluid Particles** | Physics | Wave propagation through particle grid |
-| **Fibonacci Spiral** | Number Theory | Golden ratio rectangles sequence |
-| **Wave Interference** | Physics | Sine waves combining constructively |
-| **Geometric Transformations** | Geometry | Morphing polygons to circles |
-| **Vector Field** | Vector Calculus | Circular flow visualization |
+- **6 AI & Machine Learning Animations**: Attention mechanisms, neural networks, gradient descent, vector embeddings, context windows, and temperature sampling
+- **11 Mathematics & Physics Animations**: Fractals, chaos theory, Fourier analysis, vector fields, and more
+- **Interactive Webapp**: Click any animation to view detailed explanations with LaTeX formulas
+- **High-Quality Renders**: All animations rendered at 1080p60 using Manim
+- **Responsive Design**: Beautiful dark theme with smooth animations and hover effects
+- **Educational Content**: Each visualization includes detailed mathematical explanations
+- **Open Source**: Full Python source code for generating every animation
 
-## 🚀 Quick Start
+## 🏗️ Project Architecture
 
-### Prerequisites
-
-- Python 3.13+
-- Node.js 18+
-- [uv](https://github.com/astral-sh/uv) (Python package manager)
-- [Manim dependencies](https://docs.manim.community/en/stable/installation.html)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/math-visual.git
-   cd math-visual
-   ```
-
-2. **Set up Manim environment**
-   ```bash
-   cd manimations
-   uv sync
-   ```
-
-3. **Install frontend dependencies**
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:5173](http://localhost:5173)
-
-## 📁 Project Structure
+This is **not** a traditional web app with backend/frontend. Instead:
 
 ```
 math-visual/
-├── manimations/          # Python Manim animations
-│   ├── animations.py     # Core animation scenes
-│   ├── advanced_animations.py
-│   └── media/           # Rendered video outputs
+├── manimations/           # Animation Generation Pipeline (Python + Manim)
+│   ├── ai_visual_simple.py      # Generate AI/ML animations
+│   ├── animations.py             # Generate core math animations  
+│   ├── stunning_animations.py   # Generate advanced visualizations
+│   └── media/                    # Rendered outputs (gitignored)
 │
-├── frontend/            # React frontend
+└── webapp/                # Showcase Application (React)
+    ├── src/App.jsx              # Animation gallery + modal viewer
+    ├── public/videos/           # Deployed video files
+    └── dist/                     # Production build (gitignored)
+```
+
+**The Flow:**
+1. Write Python → Generate animations with Manim → Export MP4s
+2. Copy videos → Webapp public folder → Add metadata to gallery
+3. Users browse webapp → Watch animations → Learn concepts
+
+## 🎨 Animation Categories
+
+### AI & Machine Learning (6 animations)
+1. **Attention Mechanism** - Transformer self-attention visualization with query/key/value matrices
+2. **Neural Network Activation** - Forward propagation through layers with ReLU activation
+3. **Gradient Descent** - Optimization algorithm finding minimum loss on a loss surface
+4. **Vector Embeddings** - Semantic similarity in vector space (RAG concept)
+5. **Context Window** - LLM conversation memory management with token limits
+6. **Temperature Sampling** - Controlling LLM creativity vs determinism in text generation
+
+### Mathematics & Physics (11 animations)
+- **Fractals**: Fractal Tree, Mandelbrot Set visualization, Mandelbrot Zoom
+- **Chaos Theory**: Lorenz Attractor, Double Pendulum
+- **Fourier Analysis**: Fourier Circles, Fourier Epicycles, Fourier Series Drawing
+- **Physics**: Wave Interference, Particle System, Fluid Particles
+- **Calculus**: Vector Field, Vector Field Flow, Geometric Transformations
+- **Number Theory**: Fibonacci Spiral, Sorting Visualization
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Python 3.13+** with `uv` or `pip`
+- **Node.js 18+** with `pnpm` (or npm)
+- **FFmpeg** (for Manim video rendering)
+
+### Installation
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/peltomaaa/math-visual.git
+cd math-visual
+```
+
+#### 2. Set Up Manim Environment
+
+```bash
+cd manimations
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install manim
+
+# Verify installation
+manim --version
+```
+
+#### 3. Set Up Webapp
+
+```bash
+cd ../webapp
+
+# Install dependencies
+pnpm install  # or: npm install
+
+# Start development server
+pnpm dev  # or: npm run dev
+```
+
+The webapp will be available at `http://localhost:5173`
+
+## 📁 Project Structure
+
+```text
+math-visual/
+├── manimations/              # Animation Generation Pipeline
+│   ├── ai_visual_simple.py   # AI/ML animations (6 scenes)
+│   ├── animations.py         # Core math animations
+│   ├── improved_animations.py
+│   ├── stunning_animations.py
+│   ├── .venv/               # Python virtual environment
+│   └── media/               # Rendered video outputs (gitignored)
+│       └── videos/
+│           └── */1080p60/   # High-quality MP4 files
+│
+├── webapp/                  # Showcase Application
 │   ├── src/
-│   │   ├── App.jsx     # Main application
-│   │   ├── App.css     # Styling
-│   │   └── main.jsx
+│   │   ├── App.jsx          # Main component with animations data
+│   │   ├── App.css          # Styling and animations
+│   │   └── main.jsx         # Entry point
 │   ├── public/
-│   │   └── videos/     # Animation video files
+│   │   └── videos/          # Deployed animation videos
 │   └── package.json
 │
-└── README.md
+├── README.md
+├── CONTRIBUTING.md
+├── BACKLOG.md
+└── GIT_STRATEGY.md
 ```
 
 ## 🎬 Creating New Animations
 
-1. **Write a Manim scene** in `manimations/animations.py`:
-   ```python
-   from manim import *
+### 1. Write the Manim Scene
 
-   class MyAnimation(Scene):
-       def construct(self):
-           circle = Circle()
-           self.play(Create(circle))
-   ```
+Add your scene to `manimations/ai_visual_simple.py` or create a new file:
 
-2. **Render the animation**:
-   ```bash
-   cd manimations
-   uv run manim -qm animations.py MyAnimation
-   ```
+```python
+from manim import *
 
-3. **Copy to frontend**:
-   ```bash
-   cp media/videos/animations/720p30/MyAnimation.mp4 ../frontend/public/videos/
-   ```
+class MyAnimation(Scene):
+    def construct(self):
+        title = Text("My Animation", font_size=48, color=BLUE_B, font="Sans")
+        self.play(Write(title))
+        self.wait(1)
+```
 
-4. **Add to React app** in `frontend/src/App.jsx`:
-   ```javascript
-   {
-     id: 7,
-     title: 'My Animation',
-     description: 'Description here',
-     video: '/videos/MyAnimation.mp4',
-     category: 'Category'
-   }
-   ```
+### 2. Render the Animation
+
+```bash
+cd manimations
+source .venv/bin/activate
+
+# Render at 1080p60 (high quality)
+manim -qh your_file.py MyAnimation
+
+# Output will be in: media/videos/your_file/1080p60/MyAnimation.mp4
+```
+
+### 3. Copy to Webapp
+
+```bash
+cp media/videos/your_file/1080p60/MyAnimation.mp4 ../webapp/public/videos/
+```
+
+### 4. Add to React App
+
+Edit `webapp/src/App.jsx` and add your animation to the `animations` array:
+
+```javascript
+{
+  id: 18,
+  title: "My Animation",
+  description: "Short description for card",
+  video: "/videos/MyAnimation.mp4",
+  category: "AI & Machine Learning", // or other category
+  formula: "E = mc^2", // LaTeX formula
+  explanation: "Detailed explanation...",
+  mathConcept: "Key Concept Name",
+}
+```
 
 ## 🛠️ Tech Stack
 
-### Animations
-- **Manim Community** - Mathematical animation engine
+### Animation Generation
+
+- **Manim Community** - Mathematical animation framework
 - **Python 3.13** - Programming language
-- **NumPy** - Numerical computations
-- **Cairo** - Graphics library
+- **FFmpeg** - Video encoding
 
-### Frontend
-- **React 18** - UI framework
-- **Vite 7** - Build tool
-- **CSS3** - Styling with custom properties
+### Showcase Webapp
 
-## 📸 Screenshots
+- **React 19.2** - UI framework
+- **Vite 7.1** - Build tool and dev server
+- **React-KaTeX** - LaTeX formula rendering
+- **React-Icons** - Icon library
+- **CSS3** - Styling with modern features
 
-> Interactive cards with hover-to-play animations
+## 📝 Development Workflow
 
-> Gradient text header with sleek minimal design
+### Adding Animations
 
-> Responsive grid layout adapting to screen sizes
+1. Write Manim scene in `manimations/`
+2. Test render: `manim -ql scene.py SceneName` (low quality, faster)
+3. Final render: `manim -qh scene.py SceneName` (1080p60)
+4. Copy MP4 to `webapp/public/videos/`
+5. Add metadata to `webapp/src/App.jsx`
 
-## 🤝 Contributing
+### Webapp Development
 
-Contributions are welcome! Feel free to:
+1. Run dev server: `pnpm dev`
+2. Edit components in `src/`
+3. Hot reload reflects changes instantly
+4. Build for production: `pnpm build`
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-animation`)
-3. Commit your changes (`git commit -m 'Add amazing animation'`)
-4. Push to the branch (`git push origin feature/amazing-animation`)
-5. Open a Pull Request
+## 🎯 Best Practices
 
-## 📝 License
+### Manim Animations
 
-This project is open source and available under the [MIT License](LICENSE).
+- Always specify `font="Sans"` for Text objects (prevents letter spacing issues)
+- Keep labels short and simple (detailed explanations go in React UI)
+- Use `font_size=18-24` for readable labels at 1080p
+- Render at `-qh` (1080p60) for final version
+- Test with `-ql` (480p15) during development for faster iteration
+
+### React Integration
+
+- Provide detailed explanations (200-300 words) in the `explanation` field
+- Include LaTeX formulas showing key mathematical concepts
+- Use descriptive titles and concise descriptions
+- Maintain consistent ID numbering
+
+## 🐛 Known Issues
+
+See [BACKLOG.md](./BACKLOG.md) for current issues and planned improvements.
+
+## � License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- [3Blue1Brown](https://www.3blue1brown.com/) - For creating Manim
-- [Manim Community](https://www.manim.community/) - For maintaining the community edition
-- All contributors and supporters
+- [Manim Community](https://www.manim.community/) - Amazing mathematical animation framework
+- [3Blue1Brown](https://www.3blue1brown.com/) - Inspiration for mathematical visualizations
 
-## 📧 Contact
+## 🔗 Links
 
-For questions or suggestions, feel free to open an issue or reach out!
+- **Manim Docs**: https://docs.manim.community/
+- **React Docs**: https://react.dev/
 
 ---
 
-**Made with ❤️ using Manim & React**
+Made with ❤️ and mathematics
+
