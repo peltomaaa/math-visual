@@ -135,10 +135,14 @@ math-visual/
 │   │   └── videos/          # Deployed animation videos
 │   └── package.json
 │
+├── docs/                    # Documentation
+│   ├── ARCHITECTURE.md      # Detailed architecture explanation
+│   ├── CONTRIBUTING.md      # Contribution guidelines
+│   ├── GIT_STRATEGY.md      # Git workflow & what to commit
+│   └── GITHUB_ENHANCEMENTS.md  # Repository improvement ideas
+│
 ├── README.md
-├── CONTRIBUTING.md
-├── BACKLOG.md
-└── GIT_STRATEGY.md
+└── BACKLOG.md              # Issue tracker & planned features
 ```
 
 ## 🎬 Creating New Animations
@@ -242,9 +246,13 @@ Edit `webapp/src/App.jsx` and add your animation to the `animations` array:
 - Use descriptive titles and concise descriptions
 - Maintain consistent ID numbering
 
-## 🐛 Known Issues
+## � Documentation
 
-See [BACKLOG.md](./BACKLOG.md) for current issues and planned improvements.
+- **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - Deep dive into the dual-pipeline architecture
+- **[CONTRIBUTING.md](./docs/CONTRIBUTING.md)** - How to contribute animations or improve the webapp
+- **[GIT_STRATEGY.md](./docs/GIT_STRATEGY.md)** - What files to commit and why
+- **[GITHUB_ENHANCEMENTS.md](./docs/GITHUB_ENHANCEMENTS.md)** - Ideas for improving this repository
+- **[BACKLOG.md](./BACKLOG.md)** - Known issues and planned features
 
 ## � License
 

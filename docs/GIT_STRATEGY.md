@@ -11,12 +11,19 @@ This project uses a **dual-pipeline architecture**:
 
 The key insight: **Manim outputs are build artifacts** (like compiled code). We commit the source Python scripts, not the generated videos. The webapp gets pre-built videos for deployment.
 
+**Read more:** [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed diagrams and explanation.
+
 ## ✅ Files Included in Git
 
 ### Documentation
+
 - `README.md` - Project overview
 - `BACKLOG.md` - Issue tracker
-- `CONTRIBUTING.md` - Contributor guide
+- `docs/` - Detailed documentation
+  - `ARCHITECTURE.md` - Architecture deep dive
+  - `CONTRIBUTING.md` - Contributor guide
+  - `GIT_STRATEGY.md` - This file
+  - `GITHUB_ENHANCEMENTS.md` - Repository improvement ideas
 - `LICENSE` - MIT license
 
 ### Manim Source Code

@@ -11,6 +11,8 @@ This project uses a **dual-pipeline architecture**:
 
 You don't need to work on both parts - you can contribute animations without touching the webapp, or improve the UI without generating new animations!
 
+**Read more:** [ARCHITECTURE.md](./ARCHITECTURE.md) for a deep dive into the dual-pipeline design.
+
 ## 🚀 Quick Start for Contributors
 
 ### Setting Up Your Development Environment
