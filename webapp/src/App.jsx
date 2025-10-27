@@ -363,11 +363,8 @@ function App() {
     <div className="app">
       <header className="header">
         <h1 className="title">
-          <span className="gradient-text">Mathematical</span> Animations
+          <span className="gradient-text">AI in Motion</span>
         </h1>
-        <p className="subtitle">
-          Interactive visualizations of math and AI concepts
-        </p>
       </header>
 
       <main className="main">

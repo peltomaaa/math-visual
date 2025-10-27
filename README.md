@@ -1,6 +1,6 @@
-# Mathematical Animations
+# AI in Motion
 
-Interactive visualizations of mathematics and AI concepts, built with **Manim** and **React**.
+Interactive visualizations of AI and mathematical concepts, built with **Manim** and **React**.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.13-blue.svg)
